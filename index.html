@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/material.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/addon/hint/show-hint.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <h1 class="editor-heading">Code Editor</h1>
+
+    <div class="editor-container">
+        
+        <div class="editor" id="html-editor">          
+            <h2> <i class='bx bxl-html5' style='color:#ff7300'></i>HTML</h2>
+            <textarea id="html-code" placeholder="Write HTML here..."></textarea>
+        </div>
+        <div class="editor" id="css-editor">
+            <h2><i class='bx bxl-css3' style='color:#009dff'></i>CSS</h2>
+            <textarea id="css-code" placeholder="Write CSS here..."></textarea>
+        </div>
+        <div class="editor" id="js-editor">
+            <h2><i class='bx bxl-javascript' style='color:#f2ff00'></i>JavaScript</h2>
+            <textarea id="js-code" placeholder="Write JavaScript here..."></textarea>
+        </div>
+    </div>
+    <h3 class="output"><i class='bx bx-play bx-rotate-90' ></i>OUTPUT<i class='bx bx-play bx-rotate-90' ></i></h3>
+    
+    <div class="preview-container">
+        
+        <iframe id="preview"></iframe>
+        
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/xml/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/addon/hint/show-hint.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/addon/hint/xml-hint.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/addon/hint/css-hint.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/addon/hint/javascript-hint.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
